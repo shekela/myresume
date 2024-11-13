@@ -1,0 +1,18 @@
+.portrait {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    image-rendering: pixelated; /* Optional: makes the effect more pronounced */
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .portrait{
+        width: 280px;
+        height: 280px;
+    }
+}

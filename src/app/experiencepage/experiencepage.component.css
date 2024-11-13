@@ -1,0 +1,287 @@
+section {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 330vh;
+    position: relative; /* Position relative to the section for proper pseudo-element placement */
+    overflow: hidden;
+    margin-top: -30vh;
+}
+
+
+.title-of-exp{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: black;
+    text-shadow: 
+      3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow to the right and down */
+      3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow further down and right */
+      3px 3px 0px rgba(0, 0, 0, 0.2);
+      margin-top: 435px;
+      font-weight: normal;
+      letter-spacing: 1.6px;
+}
+@keyframes zoomInOut {
+    0% {
+      transform: scale(0); /* Start very small */
+      opacity: 1; /* Keep visible */
+    }
+    50% {
+      transform: scale(2); /* Zoom to normal size */
+      opacity: 1; /* Keep visible */
+    }
+    100% {
+      transform: scale(1); /* Aggressive zoom out */
+      opacity: 1; /* Keep visible */
+    }
+  }
+  .zoom-in-out {
+    animation: zoomInOut 2s forwards;
+    opacity: 1;
+  }
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px; /* Space between each circle */
+    margin-top: 250px
+}
+
+.experience-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #4CAF50; /* Circle color */
+    z-index: 2; /* Ensure the circle appears above the line */
+}
+
+.line {
+    width: 5px; /* Width of the line */
+    height: 270px; /* Length of the line connecting the circles */
+    background-color: grey; /* Line color */
+    z-index: 1;
+}
+.text-left{
+    max-width: 13% !important;
+    position: absolute;
+    left: 33%;
+    word-wrap: break-word; /* Ensures long words wrap */
+    overflow-wrap: break-word; /* Alternative method for wrapping words */
+    white-space: normal;
+}
+.text-left p{
+    margin-top: 20px;
+}
+
+.text-right{
+    max-width: 13% !important;
+    position: absolute;
+    right: 33%;
+    word-wrap: break-word; /* Ensures long words wrap */
+    overflow-wrap: break-word; /* Alternative method for wrapping words */
+    white-space: normal;
+}
+.circle-win{
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: #4CAF50; /* Circle color */
+    z-index: 2; /* Ensure the circle appears above the line */
+}
+.years-of-process{
+    font-size: 23px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: #000;
+}
+.process-description{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #000;
+}
+.what-is-next{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-size: 95px;
+    font-weight: bolder;
+}
+.whatnexttext{
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 350px;
+    text-align: center;
+    margin-left: 30px;
+    position: absolute;
+    font-size: 56px;
+    text-shadow: 
+      3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow to the right and down */
+      3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow further down and right */
+      3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    section {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        height: 280vh;
+        position: relative; /* Position relative to the section for proper pseudo-element placement */
+        overflow: hidden;
+        margin-top: -50vh;
+        padding-bottom: 10vh;
+    }
+    .experience-container{
+        margin-top: 15vh;
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+    }
+    .title-of-exp{
+        text-align: center;
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 30px;
+        color: black;
+        text-shadow: 
+          3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow to the right and down */
+          3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow further down and right */
+          3px 3px 0px rgba(0, 0, 0, 0.2);
+          margin-top: 62.5vh;
+          animation: zoomInOut 2s ease-in-out forwards;
+    }
+    
+
+    .circle {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #4CAF50; /* Circle color */
+        z-index: 2; /* Ensure the circle appears above the line */
+    }
+    
+    .line {
+        width: 5px; /* Width of the line */
+        height: 200px; /* Length of the line connecting the circles */
+        background-color: grey; /* Line color */
+        z-index: 1;
+    }
+    .text-left{
+        max-width: 42% !important;
+        position: absolute;
+        left: 2%;
+        word-wrap: break-word; /* Ensures long words wrap */
+        overflow-wrap: break-word; /* Alternative method for wrapping words */
+        white-space: normal;
+    }
+    .text-left p{
+        margin-top: 20px;
+    }
+    
+    .text-right{
+        max-width: 42% !important;
+        position: absolute;
+        right: 2%;
+        word-wrap: break-word; /* Ensures long words wrap */
+        overflow-wrap: break-word; /* Alternative method for wrapping words */
+        white-space: normal;
+    }
+    .circle-win{
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        background-color: #4CAF50; /* Circle color */
+        z-index: 2; /* Ensure the circle appears above the line */
+    }
+    .years-of-process{
+        font-size: 19px;
+        font-weight: bolder;
+        font-family: sans-serif;
+        color: #000;
+    }
+    .process-description{
+        font-size: 14px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: #000;
+    }
+    .what-is-next{
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 0px;
+        font-family: sans-serif;
+        font-size: 95px;
+        font-weight: bolder;
+    }
+    .whatnexttext{
+        font-family: sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        text-align: center;
+        margin-left: 30px;
+        position: absolute;
+        font-size: 56px;
+        text-shadow: 
+          3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow to the right and down */
+          3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow further down and right */
+          3px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+    .circle-win{
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #4CAF50; /* Circle color */
+        z-index: 2; /* Ensure the circle appears above the line */
+    }
+    .what-is-next{
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 0px;
+        font-family: sans-serif;
+        font-size: 55px;
+        font-weight: bolder;
+    }
+    .whatnexttext{
+        font-family: sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        margin-top: 350px;
+        text-align: center;
+        margin-left: 30px;
+        position: absolute;
+        font-size: 41px;
+        text-shadow: 
+          3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow to the right and down */
+          3px 3px 0px rgba(0, 0, 0, 0.2),   /* Shadow further down and right */
+          3px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+    .whatnexttext{
+        margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    section{
+        height: 340vh;
+    }
+}

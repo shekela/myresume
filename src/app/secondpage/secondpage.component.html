@@ -1,0 +1,91 @@
+<section class="experience-section" id="experienceSection">
+    
+    <div class="ColorBackground">
+        <h1>Skills and experience</h1>
+    </div>
+    <div class="skillbox">
+        <div class="skill">
+              <div class="internalSkillDiv">
+                  <h2 class="skillTitle">SOFT SKILLS</h2>
+              </div>
+              <div class="skills-list" id="skills-list">
+                  <div *ngFor="let skill of skills; let i = index" 
+                       class="circle" 
+                       id="circle"
+                       [ngStyle]="{ 'padding': paddings[i] + 'px'}">
+                    <p>
+                      {{ skill }}
+                    </p>
+                  </div>
+              </div>
+              <div class="detailed-experience">
+                <p>Ability to work individually</p>
+                <p>Ability to work in teams</p>
+                <p>Communicate easily in team</p>
+                <p>Solve problems in deadline</p>
+                <p>Prioritize quality work over quick work</p>
+           </div>
+        </div>
+        <div class="skill">
+             <div class="internalSkillDiv">
+                 <h2 class="skillTitle">HARD SKILLS</h2>
+             </div>
+
+             <div class="skillsLogos">
+              <div class="skill-item">
+                  <img src="https://cdn.prod.website-files.com/6047a9e35e5dc54ac86ddd90/63065002cd563e1cd1cead28_eaadfe64.png" />
+              </div>
+              <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png" />
+              </div>
+              <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" />
+              </div>
+              <div class="skill-item">
+                  <img src="https://cdn-icons-png.flaticon.com/256/174/174854.png" />
+              </div>
+              <div class="skill-item">
+                  <img src="https://img-resize-cdn.joshmartin.ch/768x0%2Cc3537b9f46b5f6055fbc8b4cd03b6b2cc63fc2eefd3d8cd9f0c9f99a5933e496/https://joshmartin.ch/app/uploads/2017/10/css3.svg" />
+              </div>
+              <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" />
+              </div>
+              <div class="skill-item">
+                  <img src="./assets/jira-icon-2048x2048-nufjgz6n.png" />
+              </div>
+              <div class="skill-item">
+                  <img src="assets/git.png" />
+              </div>
+          </div>
+          <div class="detailed-experience">
+            <p>Solve problems with modern solutions</p>
+            <p>Work with REST API's </p>
+            <p>Ability to code with SOLID principles</p>
+            <p>Knowledge of LINQ, OOP, DI Concepts</p>
+            <p>Knowledge of CI / CD</p>
+       </div>
+        </div>
+        <div class="skill">
+             <div class="internalSkillDiv">
+                 <h2 class="skillTitle">WORK EXPERIENCE</h2>
+             </div>
+             <div class="experiences">
+                  <div class="experience-years">
+                      <h2 class="years">2</h2>
+                      <div>
+                          <h2 class="plus-icon">+</h2>
+                          <h2 class="plus">years</h2>
+                      </div>
+                  </div>
+             </div>
+             <div class="detailed-experience" id="center-text">
+                <p>Experience in business field</p>
+                <p>Experience in management</p>
+                <p>Experience in FinTech</p>
+                <p>Work experience in public sector</p>
+                <p>Student of Masaryk University</p>
+           </div>
+        </div>
+   </div>
+
+</section>

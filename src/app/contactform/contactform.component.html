@@ -1,0 +1,41 @@
+<section>
+    <div class="contact-construction">
+         <div class="text-box">
+              <h2>Thank you for your interest!</h2>
+              <p>Whether you're an individual looking to collaborate on private projects or a company seeking skilled talent for part-time or full-time roles, I’d love to hear from you. Please feel free to reach out using the form below. I’m always open to discussing new projects, potential partnerships, or job opportunities.
+                Simply provide your contact details and a brief message, and I’ll get back to you as soon as possible!"</p>
+         </div>
+         <div class="contact-form-container">
+            <h2>Contact me</h2>
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  formControlName="email"
+                  placeholder="Enter your email"
+                  [ngClass]="{'invalid': email.invalid && email.touched}"
+                />
+                <div *ngIf="email.invalid && email.touched" class="error">
+                  Please enter a valid email.
+                </div>
+              </div>
+          
+              <div class="form-group" >
+                <textarea
+                  id="message"
+                  formControlName="message"
+                  rows="5"
+                  placeholder="Write your message"
+                  [ngClass]="{'invalid': message.invalid && message.touched}"
+                ></textarea>
+                <div *ngIf="message.invalid && message.touched" class="error">
+                  Message cannot be empty.
+                </div>
+              </div>
+          
+              <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+            </form>
+          </div>
+    </div>
+</section>

@@ -1,0 +1,218 @@
+section{
+    width: 100%;
+    height: 89.5vh;
+    background: rgb(231,231,231);
+    background: linear-gradient(90deg, rgba(231,231,231,1) 0%, rgba(235,235,235,1) 61%, rgba(255,255,255,1) 100%);
+    overflow: hidden;
+}
+.sectionConstruction{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.portrait{
+    border-radius: 50%;
+}
+.textAboutMe h1{
+    margin-top: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(90deg,rgba(0, 54, 117, 1) 0%, rgba(9, 62, 121, 1) 50%, rgba(3, 0, 19, 0.719) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 64px;
+    font-weight: normal;
+    letter-spacing: 0.02cm;
+}
+.textAboutMe p{
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: rgba(9, 62, 121, 1);
+    font-size: 20px;
+    max-width: 760px;
+    overflow: hidden;
+}
+.lifeExperience{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #002753ea;
+    margin-top: 95px;
+}
+.lifeExperience p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+    font-weight: normal;
+    font-size: 27px;
+    color: #002753ea;
+}
+
+
+
+
+.textAboutMe {
+            opacity: 0; /* Initial opacity set to 0 for fade-in effect */
+            animation: fadeIn 1s forwards; /* Apply the fadeIn animation */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Final opacity set to 1 */
+            }
+        }
+
+        .textAboutMe h1 {
+            margin-top: 0px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: linear-gradient(90deg, rgba(0, 54, 117, 1) 0%, rgba(9, 62, 121, 1) 50%, rgba(3, 0, 19, 0.719) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            font-size: 64px;
+            font-weight: normal;
+            letter-spacing: 0.02cm;
+            animation: slideIn 1s forwards 0.5s; /* Apply slideIn animation with delay */
+            opacity: 0; /* Initial opacity for animation */
+        }
+
+        .textAboutMe p {
+            margin-top: 0px;
+            font-family: sans-serif;
+            font-weight: normal;
+            color: rgba(9, 62, 121, 1);
+            font-size: 20px;
+            max-width: 760px;
+            overflow: hidden;
+            opacity: 0; /* Initial opacity for animation */
+            animation: slideIn 1s forwards 1.5s; /* Apply slideIn animation with delay */
+        }
+
+        .lifeExperience {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            color: #002753ea;
+            margin-top: 95px;
+        }
+
+        .lifeExperience p {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+            font-weight: normal;
+            font-size: 27px;
+            color: #002753ea;
+            opacity: 0; /* Initial opacity for animation */
+            animation: slideIn 1s forwards; /* Apply slideIn animation */
+        }
+
+        /* Add individual animations with different delays */
+        .lifeExperience p:nth-child(1) {
+            animation-delay: 2.5s;
+        }
+
+        .lifeExperience p:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .lifeExperience p:nth-child(3) {
+            animation-delay: 3.5s;
+        }
+
+        .lifeExperience p:nth-child(4) {
+            animation-delay: 4s;
+        }
+
+        .lifeExperience p:nth-child(5) {
+            animation-delay: 4.5s;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px); /* Start from below */
+                opacity: 0; /* Initial opacity */
+            }
+            to {
+                transform: translateY(0); /* End at the original position */
+                opacity: 1; /* Final opacity */
+            }
+        }
+
+        .container {
+            position: relative;
+            width: 500px; /* Adjust according to your image size */
+            height: 500px; /* Adjust according to your image size */
+            overflow: hidden;
+        }
+        
+        .portrait {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            image-rendering: pixelated; /* Optional: makes the effect more pronounced */
+        }
+
+
+@media only screen and (max-width: 600px) {
+    section{
+        height: auto;
+    }
+    .sectionConstruction{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+    .textAboutMe{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        max-width: 90%;
+        overflow: hidden;
+    }
+    .textAboutMe h1{
+        margin-top: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background: linear-gradient(90deg,rgba(0, 54, 117, 1) 0%, rgba(9, 62, 121, 1) 50%, rgba(3, 0, 19, 0.719) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-size: 30px;
+        font-weight: normal;
+        letter-spacing: 0.02cm;
+    }
+    .textAboutMe p{
+        margin-top: 50px;
+        font-family: sans-serif;
+        font-weight: normal;
+        color: rgba(9, 62, 121, 1);
+        font-size: 20px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .lifeExperience{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: #002753ea;
+        margin-top: 45px;
+    }
+    .lifeExperience p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+        font-weight: normal;
+        font-size: 23px;
+        color: #002753ea;
+        margin-top: 10px;
+    }
+    
+    
+}
